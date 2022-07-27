@@ -70,7 +70,8 @@ export default function App() {
         <NavigationContainer
           theme={scheme === "dark" ? iOSDarkTheme : iOSLightTheme}
         >
-          <Stack.Navigator initialRouteName="Shop">
+          <Stack.Navigator initialRouteName="Shop" >
+            
             {/* Logged-out stack */}
             <Stack.Screen
               name="Shop"

@@ -38,6 +38,6 @@ const styles = StyleSheet.create({
 		marginHorizontal: "7%"
 	},
 	scrollview: {
-		height: "100%"
+		height: "100%",
 	}
 })

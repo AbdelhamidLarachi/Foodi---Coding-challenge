@@ -2,7 +2,7 @@ import React from 'react';
 
 // Components
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { StyleSheet, View } from 'react-native';
+import { Platform, StyleSheet, View } from 'react-native';
 import { FontAwesome, MaterialIcons, Entypo } from '@expo/vector-icons';
 import TabLabel from './TabLabel';
 import Svg, { Path } from "react-native-svg";
@@ -17,6 +17,10 @@ import Cart from '../../screens/Cart';
 // Translation
 import { useTranslation } from 'react-i18next';
 import CartWithBadge from '../Icons/CartWithBadge';
+
+import useDimensions from "../../functions/useDimensions"
+const { h, w } = useDimensions();
+
 
 
 const Tab = createBottomTabNavigator();
@@ -118,11 +122,12 @@ export default function BottomNavigator(props: any) {
         tabBarInactiveTintColor: '#BDBDBD',
         tabBarActiveTintColor: "#1FD1B4",
         tabBarStyle: styles.tabbar,
+        tabBarHideOnKeyboard: true
       })}
     >
       <Tab.Screen name="Home" component={Home} options={{ headerShown: false }} />
       <Tab.Screen name="Shop" component={Shop} options={{ headerShown: false }} />
-      <Tab.Screen name="Cart" component={Cart} />
+      <Tab.Screen name="Cart" component={Cart} options={{ headerTitleAlign: "center" }} />
       <Tab.Screen name="Favorites" component={Favorites} options={{ headerShown: false }} />
       <Tab.Screen name="Profile" component={Profile} options={{ headerShown: false }} />
     </Tab.Navigator>
@@ -169,9 +174,17 @@ const styles = StyleSheet.create({
   tabbar: {
     position: 'absolute',
     backgroundColor: "transparent",
-    bottom: -30,
+    bottom: Platform.OS === "ios" ? -w(8) : -w(5),
     borderTopWidth: 0,
-    height: 130
+    height: 130,
+    // SHADOW
+    shadowColor: "white",
+    shadowOffset: {
+      width: 0,
+      height: 0,
+    },
+    shadowOpacity: 0,
+    shadowRadius: 0,
   },
   svg: {
     position: "absolute",

@@ -1,6 +1,7 @@
 import React from "react"
-import { StyleSheet, TouchableOpacity, Text } from 'react-native';
+import { StyleSheet, TouchableOpacity, Text, Platform } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
+import Constants from "expo-constants";
 
 
 
@@ -19,6 +20,7 @@ export default (
 ): void => {
 
     navigation.setOptions({
+        headerStatusBarHeight: Platform.OS == "ios" ? Constants.statusBarHeight + 20 : 20,
         headerStyle: [styles.headerStyle, { backgroundColor }],
         headerTitle,
         headerLeft
@@ -45,6 +47,7 @@ const styles = StyleSheet.create({
     },
     headerStyle: {
         shadowColor: 'transparent',
+        marginTop: 20
     },
 
     goBackIcon: {
