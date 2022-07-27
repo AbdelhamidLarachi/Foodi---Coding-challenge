@@ -1,24 +1,81 @@
 
+
+# Coding Challenge!
+
+**Price calculation:**
+
+Create a customer basket that allows a customer to add products and provides a total cost of the basket including applicable discounts.
+
+**Available products**
+
+
+
+|**Product**|**Cost**|
+| - | - |
+|Butter|£0.80|
+|Milk|£1.15|
+|Bread|£1.00|
+**Offers**
+
+- Buy 2 Butter and get a Bread at 50% off
+- Buy 3 Milk and get the 4th milk for free
+
+**Scénarios**
+
+- **Given** the basket has 1 bread, 1 butter and 1 milk **when** I total the basket **then** the total should be £2.95
+- **Given** the basket has 2 butter and 2 bread **when** I total the basket **then** the total should be £3.10
+- **Given** the basket has 4 milk **when** I total the basket **then** the total should be £3.45
+- **Given** the basket has 2 butter, 1 bread and 8 milk **when** I total the basket **then** the total should be £9.00
+
+**Design**
+
+- Home Screen
+
+<img alt="node" src="https://github.com/AbdelhamidLarachi/Foodi---Coding-challenge/blob/master/assets/markdown/asked/home.png?raw=true" width="50%" height="50%">
+
+- Product Screen
+
+<img alt="node" src="https://github.com/AbdelhamidLarachi/Foodi---Coding-challenge/blob/master/assets/markdown/asked/home.png?raw=true" width="50%" height="50%">
+
+- Checkout Screen
+
+<img alt="node" src="https://github.com/AbdelhamidLarachi/Foodi---Coding-challenge/blob/master/assets/markdown/asked/cart.png?raw=true" width="50%" height="50%">
+
+**Requirements :**
+
+1 - Build reusable components
+
+2 - Build the app based on a functional component.
+
+3 - Frameworks to use:  react native / Flutter
+
+4- Try to optimize rendering time as much as possible.
+
+
+
+# Result
+
+- Home Screen
+
+<img alt="node" src="https://github.com/AbdelhamidLarachi/Foodi---Coding-challenge/blob/master/assets/markdown/result/home.png?raw=true" width="50%" height="50%">
+
+- Product Screen
+
+<img alt="node" src="https://github.com/AbdelhamidLarachi/Foodi---Coding-challenge/blob/master/assets/markdown/result/product.png?raw=true" width="50%" height="50%">
+
+- Checkout Screen
+
+<img alt="node" src="https://github.com/AbdelhamidLarachi/Foodi---Coding-challenge/blob/master/assets/markdown/result/cart.png?raw=true" width="50%" height="50%">
+
+
+
 ## Development
 
-### Installation
+### Package install
 ```bash
-$ git clone https://github.com/AbdelhamidLarachi/react-native-boilerplate && cd react-native-boilerplate
 $ yarn install
 ```
-
-### iOS Simulator
-Development with an iOS simulator:
-```bash
-$ yarn ios
-```
-
-### Android Emulator
-```bash
-$ yarn android
-```
-
-### Real Device
+### Expo Start
 ```bash
 $ yarn start
 ```
