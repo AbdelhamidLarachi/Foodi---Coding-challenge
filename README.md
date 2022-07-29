@@ -1,5 +1,8 @@
 
 
+<img alt="node" src="https://github.com/AbdelhamidLarachi/Foodi---Coding-challenge/blob/master/assets/markdown/thumb.png?raw=true" width="100%" height="100%">
+
+
 # Coding Challenge!
 
 **Price calculation:**
@@ -7,7 +10,6 @@
 Create a customer basket that allows a customer to add products and provides a total cost of the basket including applicable discounts.
 
 **Available products**
-
 
 
 |**Product**|**Cost**|
