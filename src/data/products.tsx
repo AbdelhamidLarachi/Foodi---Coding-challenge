@@ -27,7 +27,13 @@ const products: IProduct[] = [
 
             // Buy 2 Butter and get a Bread at 50% off
             if (butter && butter.quantity >= 2) {
-                const discount = (price * 50 / 100);
+                // get one decimal without rounding
+                let discounts = Number((butter.quantity / 2).toString()[0]);
+
+                // foreach 2 butter get a -50% on one bread.
+                if (quantity < discounts) discounts = quantity
+                const discount = ((price * 50) / 100) * discounts;
+
                 return {
                     discount,
                     total: total - discount
@@ -47,10 +53,15 @@ const products: IProduct[] = [
         img: require(`../../assets/images/products/milk.png`),
         useDiscount: ({ quantity = 0, price }: IProduct, cart: IProduct[]) => {
             // Buy 3 Milk and get the 4th milk for free
-            if (quantity > 2) {
+
+            const free = Number((quantity / 4).toString()[0]);
+            const discount = (price * free);
+
+            if (free >= 1) {
                 return {
-                    give: 1,
-                    total: quantity * price
+                    give: free,
+                    total: (quantity * price) - discount,
+                    discount: discount
                 }
             }
 

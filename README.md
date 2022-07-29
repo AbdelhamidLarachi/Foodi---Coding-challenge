@@ -27,19 +27,10 @@ Create a customer basket that allows a customer to add products and provides a t
 - **Given** the basket has 4 milk **when** I total the basket **then** the total should be £3.45
 - **Given** the basket has 2 butter, 1 bread and 8 milk **when** I total the basket **then** the total should be £9.00
 
-**Design**
+**Design required**
 
-- Home Screen
 
-<img alt="node" src="https://github.com/AbdelhamidLarachi/Foodi---Coding-challenge/blob/master/assets/markdown/asked/home.png?raw=true" width="50%" height="50%">
-
-- Product Screen
-
-<img alt="node" src="https://github.com/AbdelhamidLarachi/Foodi---Coding-challenge/blob/master/assets/markdown/asked/home.png?raw=true" width="50%" height="50%">
-
-- Checkout Screen
-
-<img alt="node" src="https://github.com/AbdelhamidLarachi/Foodi---Coding-challenge/blob/master/assets/markdown/asked/cart.png?raw=true" width="50%" height="50%">
+<img alt="node" src="https://github.com/AbdelhamidLarachi/Foodi---Coding-challenge/blob/master/assets/markdown/asked.png?raw=true" width="50%" height="50%">
 
 **Requirements :**
 
@@ -55,18 +46,8 @@ Create a customer basket that allows a customer to add products and provides a t
 
 # Result
 
-- Home Screen
 
-<img alt="node" src="https://github.com/AbdelhamidLarachi/Foodi---Coding-challenge/blob/master/assets/markdown/result/home.png?raw=true" width="50%" height="50%">
-
-- Product Screen
-
-<img alt="node" src="https://github.com/AbdelhamidLarachi/Foodi---Coding-challenge/blob/master/assets/markdown/result/product.png?raw=true" width="50%" height="50%">
-
-- Checkout Screen
-
-<img alt="node" src="https://github.com/AbdelhamidLarachi/Foodi---Coding-challenge/blob/master/assets/markdown/result/cart.png?raw=true" width="50%" height="50%">
-
+<img alt="node" src="https://github.com/AbdelhamidLarachi/Foodi---Coding-challenge/blob/master/assets/markdown/result.png?raw=true" width="50%" height="50%">
 
 
 ## Development
