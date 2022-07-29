@@ -30,7 +30,7 @@ Create a customer basket that allows a customer to add products and provides a t
 **Design required**
 
 
-<img alt="node" src="https://github.com/AbdelhamidLarachi/Foodi---Coding-challenge/blob/master/assets/markdown/asked.png?raw=true" width="50%" height="50%">
+<img alt="node" src="https://github.com/AbdelhamidLarachi/Foodi---Coding-challenge/blob/master/assets/markdown/asked.png?raw=true" width="100%" height="100%">
 
 **Requirements :**
 
@@ -47,7 +47,7 @@ Create a customer basket that allows a customer to add products and provides a t
 # Result
 
 
-<img alt="node" src="https://github.com/AbdelhamidLarachi/Foodi---Coding-challenge/blob/master/assets/markdown/result.png?raw=true" width="50%" height="50%">
+<img alt="node" src="https://github.com/AbdelhamidLarachi/Foodi---Coding-challenge/blob/master/assets/markdown/result.png?raw=true" width="100%" height="100%">
 
 
 ## Development
